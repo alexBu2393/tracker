@@ -1,0 +1,114 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #14141f;
+    color: #f0f0f0;
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: env(safe-area-inset-top, 20px);
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 { font-size: 1.6em; margin-bottom: 6px; }
+header p { color: #a0a0b8; font-size: 0.9em; }
+
+main { max-width: 500px; margin: 0 auto; }
+
+.pasek-dodawania {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pasek-dodawania input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #2d2d45;
+    background-color: #1a1a2e;
+    color: white;
+    font-size: 1em;
+}
+
+.pasek-dodawania button {
+    width: 50px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #6c5ce7, #fd79a8);
+    color: white;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.nawyk {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #1a1a2e;
+    border: 1px solid #2d2d45;
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.checkbox-nawyku {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #6c5ce7;
+    background: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 1em;
+    color: transparent;
+}
+
+.checkbox-nawyku.zaznaczony {
+    background: linear-gradient(135deg, #6c5ce7, #fd79a8);
+    color: white;
+}
+
+.nazwa-nawyku {
+    flex: 1;
+    font-size: 1.05em;
+}
+
+.nazwa-nawyku.ukonczony {
+    text-decoration: line-through;
+    color: #a0a0b8;
+}
+
+.usun-nawyk {
+    background: none;
+    border: none;
+    color: #ff7675;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.podsumowanie {
+    text-align: center;
+    margin-top: 30px;
+    color: #a0a0b8;
+}
+
+.pasek-postepu {
+    background-color: #1a1a2e;
+    border-radius: 20px;
+    height: 12px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.wypelnienie-postepu {
+    height: 100%;
+    background: linear-gradient(90deg, #6c5ce7, #fd79a8);
+    width: 0%;
+    transition: width 0.3s ease;
+}

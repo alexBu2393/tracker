@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#6c5ce7">
+    <title>Tracker Nawyków</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Moje Nawyki</h1>
+        <p id="dzisiejszaData"></p>
+    </header>
+
+    <main>
+        <div class="pasek-dodawania">
+            <input type="text" id="poleNawyk" placeholder="Nowy nawyk, np. Pić wodę">
+            <button id="przyciskDodaj">+</button>
+        </div>
+
+        <div id="listaNawykow"></div>
+
+        <div class="podsumowanie">
+            <p><span id="ukonczoneDzis">0</span> / <span id="wszystkieNawyki">0</span> ukończonych dzisiaj</p>
+            <div class="pasek-postepu">
+                <div class="wypelnienie-postepu" id="wypelnieniePostepu"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="skrypt.js"></script>
+</body>
+</html>
